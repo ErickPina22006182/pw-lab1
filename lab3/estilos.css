@@ -1,0 +1,64 @@
+*{font-family: Arial Narrow, Arial, Hel;}
+body{background-color: aquamarine;}
+
+h3{
+    color:rgb(74, 20, 161)
+}
+
+h2{
+    color: green;
+}
+
+.pinta{
+    color: rgb(16, 207, 118);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p#importante{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p#importante2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p#importante3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p#importante4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+[target="perguntas"]{
+    color: brown;
+}
+
+[target="local"]{
+    color: green;
+}
+
+[target="multimedia"]{
+    color: blue;
+}
+
+[target="infos"]{
+    color: yellow;
+}
+
+a:link{color: rgb(0, 129, 86);}
+
+h1::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}
+
+ul p {
+    background-color: yellow;
+    width: fit-content;
+}
+
+section > li{
+    background-color: rgb(0, 185, 241);
+    width: fit-content;
+}

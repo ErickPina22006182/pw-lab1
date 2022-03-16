@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="author" content="Erick Pina">
+        <meta name="keywords" content="São Paulo">
+        <meta name="description" content="Website sobre São Paulo">
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="shortcut icon" type="image/x-icon" href="images/Brasil.ico">
+        <title>São Paulo</title>
+    </head>
+
+    <body>
+        <body style="background-color: honeydew"></body>
+        
+        <h1>São Paulo</h1>
+
+        <img src="images/sao_paulo.jpg">
+        <br>
+        <a href="../index.html">Home</a>
+        <a> | </a>
+        <a href="local.html">Localização</a>
+        <a> | </a>
+        <a href="multimedia.html">Multimédia</a>
+        <a> | </a>
+        <a href="info.html">Informações</a>
+        <a> | </a>
+        <a href="quizz.html" target="perguntas"><b>Quizz</b></a>
+
+        <h3>Quizz</h3>
+
+        <p>Nesta página você poderá fazer um quizz para saber se já conheces bem a cidade de São Paulo!</p>
+
+        <form method="post" action="mailto:erickmpina@gmail.com" enctype="multipart/form-data">
+            <fieldset>
+            <legend>Quizz sobre São Paulo</legend>
+                <fieldset>
+                    <legend>Info</legend>
+                    <p>Nome: <input type="text" autocomplete="on" maxlength="10" placeholder="Insira seu nome" name="nome" required autofocus></p>
+                    <p>Apelido: <input type="text" autocomplete="on" maxlength="12" placeholder="Insira seu apelido" name="apelido" required autofocus></p>
+                    <p>E-mail: <input type="email" autocomplete="on" placeholder="Insira seu e-mail" name="email" required autofocus></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Perguntas</legend>
+                    <p>Escolha as opções que mostram o estado e o País onde está situada a cidade de São Paulo: (Pode escolher mais de uma opção)</p> 
+                    
+                    <select id="estados" name="estados" size="4" multiple>
+                        <option value="Pará">Pará</option>
+                        <option value="Bahia">Bahia</option>
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="EstadosUnidos">Estados Unidos</option>
+                    </select>
+
+                    <br><br>
+
+                    <p>Em qual região do Brasil está situado São Paulo?</p> 
+                    <input type="radio" name="p2" value="norte" id="norte"> <label for="norte">Norte</label></p>
+                    <input type="radio" name="p2" value="nordeste" id="nordeste"><label for="nordeste">Nordeste</label></p>
+                    <input type="radio" name="p2" value="nordeste" id="sudeste"><label for="sudeste">Sudeste</label></p>
+                    <input type="radio" name="p2" value="nordeste" id="centro-oeste"><label for="centro-oeste">Centro-Oeste</label></p>
+
+                    <br>
+
+                    <p>Marque as opções corretas sobre a cidade de São Paulo:</p>
+                    <input type="checkbox" name="p3" id="1"> <label for="1">São Paulo é uma potência mundial</label></p>
+                    <input type="checkbox" name="p3" id="2"> <label for="2">São Paulo é a capital do Brasil</label></p>
+                    <input type="checkbox" name="p3" id="3"> <label for="3">A cidade de São Paulo tem mais de um aeroporto</label></p>
+                    <input type="checkbox" name="p3" id="4"> <label for="4">São Paulo é a maior cidade do Brasil em relação a sua população</label></p>
+
+                    <br>
+
+                    <p>Quando foi criada a cidade de São Paulo?</p>
+                    <input type="date" name="p4">
+
+                    <br><br>
+
+                    <p>Escolha uma cor da bandeira de São Paulo:</p>
+                    <input type="color" name="spcolor" value="#FFEA00">
+
+                    <br><br>
+
+                    <p>Qual o número de habitantes em São Paulo?</p>
+                    <label for="quantity">População:</label>
+                    <input type="number" id="quantity" name="quantity" size="10" min="0" max="10000000" step="1000" value="500">
+
+                    <br><br>
+
+                    <p>Qual a área da cidade de São Paulo?</p>
+                    <label for="vol">km^2 (entre 0 e 10.000):</label>
+                    <input type="range" id="km" name="km" min="0" max="10000">
+
+                    <br><br>
+
+                    <p>Qual a abreviação de São Paulo?</p>
+                    <input list="nomeCidade" name="nomeCidade" pattern="[A-Za-z]{2}" autocomplete="OFF" placeholder="ex.: br" maxlength="12" size="10" id="fname" name="fname"><p></p>
+                    <datalist id="nomeCidade">
+                        <option value="PA">
+                        <option value="GO">
+                        <option value="SP">
+                        <option value="BR">
+                        <option value="TO">
+                      </datalist>
+
+                    <br>
+
+                    <p>Descreva São Paulo em uma palavra:</p>
+                    <input type="text"  autocomplete="off" placeholder="ex.: Incrível" maxlength="12" size="10" id="fname" name="fname"><p></p>
+                    
+                    <br><br>
+
+                    <p>Clique no mapa no local onde está situada a cidade de São Paulo:</p>
+                    <input type="image" src="images/brasilMapa.jpeg" width="200" height="130">
+                    
+                    <br><br>
+
+                    <h2>Comentário</h2>
+                    <p>Escreva seu comentário sobre o quizz:</p>
+
+                    <textarea name="message" rows="10" cols="30">Deixe aqui seu comentário!</textarea>
+                    <br><br>
+                    <input type="submit">
+                    
+                </fieldset>
+            </fieldset>
+        </form>
+    </body>
+</html>
