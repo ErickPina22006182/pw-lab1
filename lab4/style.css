@@ -166,7 +166,7 @@ a:hover{
 {
     .destinos {
         grid-template-areas:
-        "lisboa porto
+        "lisboa porto"
         "algarve acores"
         "madeira madeira";
         gap: 20px;
