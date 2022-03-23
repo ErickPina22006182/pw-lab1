@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.titulo{
+    color: #203131;
+}
+
+.capitais{
+    display: flex;
+    background-color: rgb(238, 248, 248);
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.capitais > div {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 10px;
+}
+.capitais img {
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+.capitais div div:last-child {
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+}
+.menu a:last-child {
+    margin-left: auto;
+}
+
+a{
+    padding: 20px;
+    text-decoration: none;
+    color: #007575;
+}
+
+a:hover{
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+.cabecalho{
+    background-image: url("images/imgcabecalho.png");
+    height: 30%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.dicas{
+    display: flex;
+    background-color: rgb(238, 248, 248);
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dicas div {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(238, 248, 248);
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 10px;
+    padding: 10px 20px;
+    width: 500px;
+    height: 250px;
+}
+
+.dicas p{
+    margin-left: 20px;
+}
+
+.lisboa{
+    grid-area: lisboa;
+    background-image: url("images/lisboa.jpg");
+    background-repeat: no-repeat;
+    height: 333px;
+    background-position: center;
+    font-weight: bold;
+}
+.porto{
+    grid-area: porto;
+    background-image: url("images/porto.jpg");
+    background-repeat: no-repeat;
+    height: 333px;
+    background-position: center;
+    font-weight: bold;
+}
+
+.algarve{
+    grid-area: algarve;
+    background-image: url("images/algarve.jpg");
+    background-repeat: no-repeat;
+    height: 333px;
+    background-position: center;
+    font-weight: bold;
+}
+.madeira{
+    grid-area: madeira;
+    background-image: url("images/madeira.jpg");
+    background-repeat: no-repeat;
+    height: 333px;
+    background-position: center;
+    font-weight: bold;
+}
+.acores{
+    grid-area: acores;
+    background-image: url("images/acores.jpg");
+    background-repeat: no-repeat;
+    height: 333px;
+    background-position: center;
+    font-weight: bold;
+}
+
+.destinos{
+    display: grid;
+    background-color: rgb(238, 248, 248);
+}
+
+.destinos > div {
+  opacity: 95%;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+@media (min-width: 901px)
+{
+    .destinos {
+        grid-template-areas:
+        "lisboa porto algarve"
+        "madeira madeira acores";
+        gap: 20px;
+    }
+}
+
+@media (max-width: 900px)
+{
+    .destinos {
+        grid-template-areas:
+        "lisboa porto
+        "algarve acores"
+        "madeira madeira";
+        gap: 20px;
+    }
+}
+
+
