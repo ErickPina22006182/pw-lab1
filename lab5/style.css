@@ -83,6 +83,7 @@ a:hover{
 }
 
 .dicas div {
+    display: flex;
     justify-content: space-around;
     background-color: rgb(238, 248, 248);
     border-radius: 20px;
