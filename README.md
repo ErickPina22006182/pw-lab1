@@ -17,6 +17,6 @@ Laboratório 4
 Enunciado: https://github.com/ULHT-PW/pw-lab4  
 Site: https://a22006182-pw-labs.herokuapp.com/lab4/index.html
 
-Laboratório 5
-Enunciado: https://github.com/ULHT-PW/pw-lab5
-Site: https://a22006182-pw-labs.herokuapp.com/lab5/index.html
+Laboratório 5  
+Enunciado: https://github.com/ULHT-PW/pw-lab5  
+Site: https://a22006182-pw-labs.herokuapp.com/lab5/index.html  
