@@ -60,8 +60,9 @@ a:hover{
 
 .cabecalho{
     background-image: url("images/imgcabecalho.png");
-    height: 30%;
+    height: 90vh;
     width: 100%;
+
     background-repeat: no-repeat;
     background-size: cover;
 }

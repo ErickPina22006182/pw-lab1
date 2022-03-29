@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    position: sticky;
+    height: 10vh;
+    justify-content: center;
+    top: 0;
+    background-color: #7b5a43;
+    z-index: 9999;
+}
+
+.menu a:last-child {
+    margin-left: auto;
+}
+
+a{
+    padding: 20px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+a:hover{
+    background: linear-gradient(0.25turn, #624638, #93694c);
+    font-weight: bold;
+}
+
+.titulo{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    font-size: 30px;
+    margin-top: -80px;
+}
+
+.cabecalho{
+    display: grid;
+    background-image: url("images/img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.capitais{
+    display: flex;
+    background-color: rgb(238, 248, 248);
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    margin: 20px;
+}
+
+.capitais > div {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 10px;
+}
+.capitais img {
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+.capitais div div:last-child {
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dicas{
+    display: flex;
+    background-color: rgb(238, 248, 248);
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.dicas div {
+    justify-content: center;
+    background-color: rgb(238, 248, 248);
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 10px;
+    padding: 10px 20px;
+    width: 500px;
+    height: 250px;
+}
+
+.dicas p{
+    margin-left: 20px;
+}
+
+.lisboa{
+    grid-area: lisboa;
+    background-image: url("images/lisboa.jpg");
+    background-repeat: no-repeat;
+    height: 333px;
+    background-position: center;
+    font-weight: bold;
+}
+.porto{
+    grid-area: porto;
+    background-image: url("images/porto.jpg");
+    background-repeat: no-repeat;
+    height: 333px;
+    background-position: center;
+    font-weight: bold;
+}
+
+.algarve{
+    grid-area: algarve;
+    background-image: url("images/algarve.jpg");
+    background-repeat: no-repeat;
+    height: 333px;
+    background-position: center;
+    font-weight: bold;
+}
+.madeira{
+    grid-area: madeira;
+    background-image: url("images/madeira.jpg");
+    background-repeat: no-repeat;
+    height: 333px;
+    background-position: center;
+    font-weight: bold;
+}
+.acores{
+    grid-area: acores;
+    background-image: url("images/acores.jpg");
+    background-repeat: no-repeat;
+    height: 333px;
+    background-position: center;
+    font-weight: bold;
+}
+
+.destinos{
+    display: grid;
+    background-color: rgb(238, 248, 248);
+    padding: 70px;
+    margin: 20px;
+}
+
+.destinos > div {
+    text-shadow: #203131;
+}
+
+#dic{
+    margin-left: 20px;
+}
+
+#des{
+    margin-left: 20px;
+}
+
+.parallax {
+  background-image: url("images/imgmenu.jpg");
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fotos {
+    display: grid;
+    gap: 10px;
+    background-color: rgb(238, 248, 248);
+    padding: 10px;
+}
+
+.fotos > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 13px;
+    transition: transform 1s;
+    /*height: fit-content;
+    width: fit-content;*/
+}
+
+.fotos p{
+    color: white;
+}
+
+.fotos > div > img{
+    border-radius: 20px;
+}
+
+.fotos > div > img:hover{
+    opacity: 0.5;
+    transition: opacity 1s;
+
+}
+
+.fotos > div:hover{
+    transform: rotate(-1.5deg);
+}
+
+.fotos > div:hover p{
+    color: black;
+}
+
+/*.fotos > div:hover{
+    background-color: black;
+    border-radius: 40px;
+}*/
+
+.classAnimacao {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template: ". .";
+    gap: 50px;
+    background-color: rgb(238, 248, 248);
+    padding: 100px;
+}
+
+.classAnimacao > div:nth-child(1) > img{
+    animation-name: right;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    position: relative;
+    animation-delay: 0.5s;
+}
+
+.classAnimacao > div:nth-child(2) > img{
+    animation-name: down;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    position: relative;
+    animation-delay: 0.5s;
+}
+
+.classAnimacao > div:nth-child(3) > img{
+    animation-name: up;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    position: relative;
+    animation-delay: 0.5s;
+}
+
+.classAnimacao > div:nth-child(4) > img{
+    animation-name: left;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    position: relative;
+    animation-delay: 0.5s;
+}
+
+@keyframes right {
+  0%   {left:0; top:0;}
+  25%  {left:350px; top:0;}
+  50%  {left:350px; top:250px;}
+  75%  {left:0; top:250px;}
+  100% {left:0; top:0;}
+}
+
+@keyframes down {
+    0%   {left:0; top:0;}
+    25%  {left:0; top:250px;}
+    50%  {left:-350px; top:250px;}
+    75%  {left:-350px; top:0;}
+    100% {left:0; top:0;}
+
+}
+
+@keyframes up {
+  0%   {left:0; top:0;}
+  25%  {left:0; top:-250px;}
+  50%  {left:350px; top:-250px;}
+  75%  {left:350px; top:0;}
+  100% {left:0; top:0;}
+}
+
+@keyframes left {
+  0%   {left:0; top:0;}
+  25%  {left:-350px; top:0;}
+  50%  {left:-350px; top:-250px;}
+  75%  {left:0; top:-250px;}
+  100% {left:0; top:0;}
+}
+
+@media (min-width: 901px)
+{
+    .destinos {
+        grid-template-areas:
+        "lisboa porto algarve"
+        "madeira madeira acores";
+        gap: 20px;
+    }
+
+    .fotos{
+         grid-template-areas:
+        ". . .";
+        gap: 20px;
+    }
+}
+
+@media (max-width: 900px)
+{
+    .fotos {
+        grid-template-areas:
+        ". .";
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .fotos {
+        grid-template-areas:
+        ".";
+        gap: 20px;
+    }
+}
+
+
